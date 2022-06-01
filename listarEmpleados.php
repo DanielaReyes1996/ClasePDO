@@ -20,10 +20,10 @@ try {
         </thead>
         <?php foreach ($listaEmpleados as $empleado){ ?>
             <tr>
-                <td><?php echo $empleado->idEmpleado ?></td>
-                <td><?php echo $empleado-> nombre?></td>
-                <td><?php echo $empleado-> email?></td>
-                <td><?php echo $empleado-> telefono?></td>
+                <td><?php echo $empleado->idEmpleado?></td>
+                <td><?php echo $empleado->nombre?></td>
+                <td><?php echo $empleado->email?></td>
+                <td><?php echo $empleado->telefono?></td>
                 <td>
                     <form action="consultarEmpleado.php" method="get">
                         <input type="hidden" name="idEmpleado" value="<?php echo $empleado->idEmpleado ?>">
