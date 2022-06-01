@@ -9,7 +9,7 @@ $Empleado = $sentencia->fetch();
 //var_dump($Empleado);
 //echo $Empleado->Nombre;
 ?>
-<form>
+<form action="actualizarEmpleado.php" method="post">
     <label for="Nombre">Nombre:</label>
     <input type="text" name="Nombre" id="Nombre" value="<?php echo $Empleado->nombre ?>">
     <br><br>
@@ -18,8 +18,8 @@ $Empleado = $sentencia->fetch();
     <br><br>
     <label for="Telefono">Nombre:</label>
     <input type="text" name="Telefono" id="Telefono" value="<?php echo $Empleado->telefono ?>">
-    
+    <input type="hidden" name="idEmpleado" id="idEmpleado" value="<?php echo $Empleado->IdEmpleado ?>">
     <br><br><br>
-    <button type="button" onclick="history.back()">Volver</button>
+    <button type="submit">Actualizar</button>
 </form>
 
