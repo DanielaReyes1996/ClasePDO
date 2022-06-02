@@ -18,7 +18,8 @@ $Empleado = $sentencia->fetch();
     <br><br>
     <label for="Telefono">Nombre:</label>
     <input type="text" name="Telefono" id="Telefono" value="<?php echo $Empleado->telefono ?>">
-    <input type="hidden" name="idEmpleado" id="idEmpleado" value="<?php echo $Empleado->IdEmpleado ?>">
+
+    <input type="hidden" name="idEmpleado" id="idEmpleado" value="<?php echo $Empleado->idEmpleado ?>">
     <br><br><br>
     <button type="submit">Actualizar</button>
 </form>
